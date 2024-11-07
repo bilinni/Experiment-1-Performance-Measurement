@@ -7,8 +7,8 @@ import Algorithms.*;
 
 public class Main {
 
-    private static final int NUM_TRIALS = 1;
-    private static final int WARMUP_TRIALS = 0;
+    private static final int NUM_TRIALS = 110;
+    private static final int WARMUP_TRIALS = 10;
     private static final String CSV_FILE = "results.csv";
 
     /**
