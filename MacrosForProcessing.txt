@@ -1,0 +1,24 @@
+Sub SplitIntoBlocks()
+    Dim ws As Worksheet
+    Dim newWs As Worksheet
+    Dim startRow As Long
+    Dim endRow As Long
+    Dim totalRows As Long
+    Dim blockSize As Long
+    Dim i As Long
+
+    Set ws = ThisWorkbook.Sheets(results-hpo14)
+    totalRows = ws.Cells(Rows.Count, 1).End(xlUp).Row
+    blockSize = 300
+
+    For i = 1 To totalRows Step blockSize
+        Set newWs = ThisWorkbook.Sheets.Add
+        newWs.Name = Block_ & Int((i - 1)  blockSize) + 1
+
+        startRow = i
+        endRow = i + blockSize - 1
+        If endRow  totalRows Then endRow = totalRows
+
+        ws.Rows(startRow &  & endRow).Copy newWs.Rows(1)
+    Next i
+End Sub
