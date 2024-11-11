@@ -1,4 +1,4 @@
-#Performance Measurement for Bubble Inc#
+# Performance Measurement for Bubble Inc
 
 The task is to evaluate which of the provided sorting algorithms works the fastest. The main
 criterion is execution time in milliseconds.
@@ -16,4 +16,4 @@ The results include:
 - Analysis of forces that can affect the results
 - Situational analysis of used algorithms
 
-See: ExperimentationReport_Lavrov_Ioffe_Biletskyi.pdf
+See: _ExperimentationReport_Lavrov_Ioffe_Biletskyi.pdf_
